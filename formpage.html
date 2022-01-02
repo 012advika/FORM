@@ -1,1 +1,139 @@
-advika srivastava...
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FORM</title>
+        <style>
+
+            
+
+
+body{
+    font-family: 'Libre Baskerville', serif;
+    
+    height:800;
+    width: 800px;
+    padding: 8px;
+    font-size: 13px;
+     
+    color: white;
+    
+
+    
+}
+
+.form{
+    
+   background-color: dodgerblue;
+    padding: 10px;
+    border: 2px solid black ;
+    border-radius: 6px;
+    font-size:larger;
+    font-weight: 600;
+}
+
+fieldset{
+
+    border: px solid  rgba(87, 85, 81, 0.24);
+    padding: 6px;
+    border-radius: 4px;
+  
+  }
+
+input[type="text"],
+input[type=""],
+input[type="radio"] ,
+input[type="checkbox"] ,
+select,
+textarea{
+
+    border: 5px solid white;
+    padding: 6px;
+    border-radius: 4px; 
+}
+
+input[type="submit"]
+{   
+    align-content: center;
+    margin: 4px;
+    border: 4px solid white;
+    border-radius: 5px;
+    padding: 7px;
+    font-weight: 300;
+     cursor: pointer;
+    width:initial;
+    
+    
+
+
+}
+
+.Enter{
+    text-align: center;
+}
+
+input[type="submit"]:hover
+{
+    background-color:dodgerblue;
+}
+
+        </style>
+    </head>
+    <body>
+        <div class="form"> 
+         <fieldset>
+             
+         <legend> Personal Info</legend>
+        <p><h3><b>First Name:</b></h3> <input type="text" name="name"></p>
+        <p><b><h3>Last Name: </h3></b><input type="text" name="name"></p>
+    
+        <br>
+      
+       
+        <legend>Course Info</legend>
+    
+        <p>
+            <b><h3>Course:</h3></b><br>
+            Web Design: <input type="radio" name="course"><br>
+            SQL: <input type="radio" name="course"><br>
+            Programming: <input type="radio" name="course">
+            
+        </p>
+    
+        <p>  <b><h3>Career Goal:</h3></b>
+            <select name="career_field" id="career_field " required>
+              <option value="">__Select the career goal__</option>
+              <option value="Programmer">PROGRAMMER</option>
+              <option value="Front-end developer">FRONT-END DEVELOPER</option>
+              <option value="Back-end developer">BACK-END DEVELOPER</option>
+              <option value="UX Designer">UX DESIGNER</option>
+            </select>
+          </p>
+      
+          <p>
+              <b><h3>Skills:</h3></b><br>
+              UNIX  <input type="checkbox" name="skills" id="skills">
+              VLM <input type="checkbox" name="skills" id="skills"><br>
+              HTML <input type="checkbox" name="skills" id="skills">
+              CSS <input type="checkbox" name="skills" id="skills"><br>
+              Python <input type="checkbox" name="skills" id="skills">
+              Javasccript <input type="checkbox" name="skills" id="skills"><br>
+    
+          </p>
+          <p>
+              <legend><h3><b>Describe any additional skills you have:</b></h3> </legend> <br>
+              <textarea type="Describe" name="Describe" rows="6" cols="100"> </textarea>
+          </p>
+          <div class="Enter">
+          <input type="submit" value="Enter My information">
+        </div>
+          
+        </div>
+    </fieldset>
+    
+    </body>
+    </html>
+    
